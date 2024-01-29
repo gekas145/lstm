@@ -1,6 +1,6 @@
 # lstm
 
-LSTM with peepholes and projections forward/backpass implemented in pytorch for educational purposes.
+LSTM with peepholes and projections forward/backward pass implemented in pytorch for educational purposes.
 
 [1] Greff K. et al, "LSTM: A Search Space Odyssey", [https://arxiv.org/pdf/1503.04069.pdf](https://arxiv.org/pdf/1503.04069.pdf)
 
