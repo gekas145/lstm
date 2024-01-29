@@ -69,7 +69,7 @@ X_test, y_test, X_train, y_train = load_mnist()
 training = DataLoader(MNISTDataset(X_train, y_train), batch_size=nbatch, shuffle=True)
 validation = DataLoader(MNISTDataset(X_test, y_test), batch_size=nbatch)
 
-net = SimpleNet(28, 512, 10, proj_dim=128)
+net = SimpleNet(28, 512, 10, 128)
 
 criterion = torch.nn.CrossEntropyLoss(reduction="sum")
 

@@ -128,11 +128,11 @@ class LSTM(torch.autograd.Function):
 
 class SimpleNet(torch.nn.Module):
 
-    def __init__(self, input_dim, lstm_dim, output_dim, *args, proj_dim=None, **kwargs):
+    def __init__(self, input_dim, lstm_dim, output_dim, proj_dim, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.lstm_dim = lstm_dim
-        self.proj_dim = lstm_dim if proj_dim is None else proj_dim
+        self.proj_dim = proj_dim
 
         self.W1 = self.__uniform(input_dim, 4*lstm_dim)
         self.R1 = self.__uniform(self.proj_dim, 4*lstm_dim)
