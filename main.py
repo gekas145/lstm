@@ -18,9 +18,7 @@ def load_mnist():
     image_size = 28
 
     file_names = ['t10k-images.idx3-ubyte',
-                  't10k-labels.idx1-ubyte',
-                  'train-images.idx3-ubyte',
-                  'train-labels.idx1-ubyte']
+                  't10k-labels.idx1-ubyte']
     data = []
     with zipfile.ZipFile('data/MNIST.zip', 'r') as zf:
         for file in file_names:
